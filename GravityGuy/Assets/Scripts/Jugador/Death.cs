@@ -58,6 +58,12 @@ public class Death : MonoBehaviour
             {
                 Checkpoint = transform.position;
             }
+
+            if (collision.gameObject.CompareTag("Enemy"))
+            {
+                lives -= 1;
+               
+            }
         }
 
 
